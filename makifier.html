@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>SOLID - Bootstrap 3 Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">PuzzleBox</a>
+          </div>
+          <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">HOME</a></li>
+              <li><a href="puzzles.html">PUZZLES</a></li>
+              <li><a href="makifier.html">MAKE YOUR OWN</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>The Puzzle Maker.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+    <!-- *****************************************************************************************************************
+     MIDDLE CONTENT
+     ***************************************************************************************************************** -->
+
+     <div class="container mtb">
+        <div class="row">
+            <form action="saveToDB.php" method="post">
+                <h1>Make a Puzzle<h1>
+                <div class="hline"></div>
+                <br><br>
+
+                <h4>Name</h4>
+                <input name="name" type="text">
+                <br><br>
+
+                <h4>Email</h4>
+                <input name="email" type="text">
+                <br><br>
+
+                <h4>Input Type</h4>
+                <input name="inputType" value="display" checked="checked" type="radio"> 14-segment display <br><br>
+                <input name="inputType" value="LED" type="radio"> LED <br><br>
+                <input name="inputType" value="Switch" type="radio"> Switch <br><br>
+
+                <p>If the input type is a 14-segment display - please input the text or number to be displayed</p>
+                <input name="#" type="text">
+                <br><br>
+
+                <p>If if it is an LED please input an array of values seperated by a comma ','</p>
+                <input name="#" type="text">
+                <br><br>
+
+                <p>If it is a switchboard, please input the switch coordinates in the form '{(1, 4), (3, 3), (2, 5)}'</p>
+                <input name="#" type="text">
+                <br><br>
+
+                <br>
+
+                <h4>Win Condition</h4>
+                <input name="win" type="text">
+                <input type="submit">
+
+            </form>
+        </div><!--/row -->
+     </div><!--/container -->
+
+     <!-- *****************************************************************************************************************
+      FOOTER
+      ***************************************************************************************************************** -->
+      <div id="footerwrap">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-4">
+                     <h4>Our Bio</h4>
+                     <div class="hline-w"></div>
+                     <p>We are a team of dedicated students at Drexel University studying computer science. We are combining our knowledge of hardware and web technology to create a fun and interactive product based around puzzles.</p>
+                 </div>
+                 <div class="col-lg-4">
+                     <h4>Our Location</h4>
+                     <div class="hline-w"></div>
+                     <p>
+                         3141 Chestnut St,<br/>
+                         Philadelphia, PA,<br/>
+                         United States.<br/>
+                     </p>
+                 </div>
+                 <div class="col-lg-4">
+                     <h4>Our University</h4>
+                     <div class="hline-w"></div>
+                     <img src="assets/img/logo.png" width="250px" alt="">
+                 </div>
+
+             </div><!--/row -->
+         </div><!--/container -->
+      </div><!--/footerwrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+    <script src="assets/js/puzzle.js"></script>
+
+  </body>
+</html>
